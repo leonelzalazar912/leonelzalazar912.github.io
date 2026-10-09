@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leonelzalazar912.github.io/sitemap.xml

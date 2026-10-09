@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Leonel Zalazar, desarrollador web y SEO de Tucumán, Argentina. WordPress, WooCommerce, PHP, JavaScript y SEO técnico y local. Proyectos reales y de código propio.">
+<meta name="theme-color" content="#221D18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23221D18'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23D9AE64'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://leonelzalazar912.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leonelzalazar912.github.io/">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Leonel Zalazar — Desarrollo web y SEO">
+<meta property="og:description" content="Construyo software y sitios web, y hago que los encuentren.">
+<meta property="og:image" content="https://leonelzalazar912.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Leonel Zalazar","jobTitle":"Desarrollador web y SEO","address":{"@type":"PostalAddress","addressLocality":"Tucumán","addressCountry":"AR"},"email":"mailto:leonelalfrezz@gmail.com","sameAs":["https://www.linkedin.com/in/leonel-alfredo-zalazar-7910a031b/","https://github.com/leonelzalazar912"]}</script>
+<title>Leonel Zalazar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5EFE2; --panel:#FDFBF6; --panel-2:#F9F3E6; --panel-dark:#221D18; --panel-dark-2:#2B2621;
+    --ink:#2B2621; --ink-soft:#5B534A; --line:#DFD1AE;
+    --gold:#B8873F; --gold-deep:#8C6A2E; --gold-soft:#EADFC0; --gold-bright:#D9AE64;
+    --on-dark:#F5EFE2; --on-dark-soft:#C2B199;
+    --shadow: 0 1px 2px rgba(43,38,33,.06), 0 8px 22px -10px rgba(43,38,33,.14);
+    --shadow-lg: 0 4px 8px rgba(43,38,33,.08), 0 24px 48px -18px rgba(43,38,33,.24);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#1D1914; --panel:#262019; --panel-2:#221D17; --panel-dark:#100D0A; --panel-dark-2:#1A1611;
+      --ink:#F1E9DA; --ink-soft:#C2B199; --line:#453A29;
+      --gold:#D9AE64; --gold-deep:#EAC98C; --gold-soft:#332B1C; --gold-bright:#E4BC79;
+      --on-dark:#F1E9DA; --on-dark-soft:#C2B199;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -12px rgba(0,0,0,.6);
+      --shadow-lg: 0 6px 14px rgba(0,0,0,.4), 0 30px 60px -20px rgba(0,0,0,.75);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#1D1914; --panel:#262019; --panel-2:#221D17; --panel-dark:#100D0A; --panel-dark-2:#1A1611;
+    --ink:#F1E9DA; --ink-soft:#C2B199; --line:#453A29;
+    --gold:#D9AE64; --gold-deep:#EAC98C; --gold-soft:#332B1C; --gold-bright:#E4BC79;
+    --on-dark:#F1E9DA; --on-dark-soft:#C2B199;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -12px rgba(0,0,0,.6);
+    --shadow-lg: 0 6px 14px rgba(0,0,0,.4), 0 30px 60px -20px rgba(0,0,0,.75);
+  }
+  *{box-sizing:border-box;}
+  html{color-scheme:light dark; scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms !important; transition-duration:.001ms !important;} }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16.5px; line-height:1.62;
+  }
+  a{color:var(--gold-deep); text-decoration-color:var(--gold); text-underline-offset:2px;}
+  b,strong{color:var(--ink); font-weight:600;}
+  .side{padding-inline:20px;}
+  .wrap{max-width:1080px; margin:0 auto;}
+  h2{ font-family:"Fraunces", serif; font-weight:600; font-size:clamp(1.5rem,3.2vw,2rem); margin:0 0 8px; text-wrap:balance; }
+  .eyebrow{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--gold-deep);
+    display:flex; align-items:center; gap:10px; margin-bottom:12px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1.5px; background:var(--gold);}
+  section{padding-block:76px;}
+  @media (max-width:640px){ section{padding-block:56px;} }
+
+  @keyframes riseIn{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
+  .rise{animation:riseIn .7s cubic-bezier(.2,.8,.2,1) both;}
+
+  /* -------- NAV -------- */
+  nav.top{
+    position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+  }
+  nav.top .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:16px; flex-wrap:wrap; gap:10px; }
+  .brand{ font-family:"Fraunces",serif; font-weight:700; font-size:1.1rem; color:var(--ink); text-decoration:none; white-space:nowrap; }
+  .navlinks{ display:flex; gap:28px; font-size:.92rem; flex-wrap:wrap; }
+  .navlinks a{ color:var(--ink-soft); text-decoration:none; font-weight:500; white-space:nowrap; }
+  .navlinks a:hover{color:var(--gold-deep);}
+  @media (max-width:680px){ .navlinks{gap:16px; font-size:.82rem;} }
+  @media (max-width:420px){ nav.top .wrap{justify-content:center; text-align:center;} .navlinks{gap:12px 14px; justify-content:center;} }
+
+  /* -------- HERO -------- */
+  header.hero{ background:var(--panel-dark); color:var(--on-dark); border-bottom:3px solid var(--gold); position:relative; overflow:hidden; }
+  header.hero::before{
+    content:""; position:absolute; inset:0;
+    background: radial-gradient(circle at 88% 10%, rgba(217,174,100,.16), transparent 45%),
+      repeating-linear-gradient(90deg, rgba(217,174,100,.045) 0px, rgba(217,174,100,.045) 1px, transparent 1px, transparent 64px);
+    pointer-events:none;
+  }
+  header.hero .wrap{ position:relative; padding-block:100px 90px; }
+  .kicker2{ font-family:"IBM Plex Mono",monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-bright); display:flex; align-items:center; gap:12px; margin-bottom:22px; }
+  .kicker2::before{content:""; width:28px; height:2px; background:var(--gold-bright);}
+  h1{
+    font-family:"Fraunces", Georgia, serif; font-weight:800; font-size:clamp(2.6rem,7vw,4.4rem);
+    line-height:1.02; margin:0 0 20px; letter-spacing:-.02em; text-wrap:balance;
+  }
+  .hero-lede{ font-size:1.22rem; color:var(--on-dark-soft); max-width:34em; margin:0 0 36px; }
+  .hero-lede b{color:var(--on-dark);}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:.96rem;
+    padding:13px 24px; border-radius:10px; text-decoration:none; transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn.primary{background:var(--gold); color:#241C0F;}
+  .btn.ghost{border:1px solid rgba(217,174,100,.5); color:var(--on-dark);}
+  .hero-tags{ display:flex; flex-wrap:wrap; gap:10px; margin-top:44px; }
+  .hero-tags span{
+    font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--on-dark-soft);
+    border:1px solid rgba(217,174,100,.3); border-radius:20px; padding:5px 13px;
+  }
+
+  /* -------- SOBRE MI -------- */
+  #sobre .grid{ display:grid; grid-template-columns:1fr 1.3fr; gap:48px; align-items:start; }
+  @media (max-width:800px){ #sobre .grid{grid-template-columns:1fr;} }
+  .portrait{
+    width:150px; border-radius:var(--radius); overflow:hidden; margin:0 auto 18px;
+    box-shadow:var(--shadow-lg); border:1px solid var(--line);
+  }
+  .portrait img{ display:block; width:100%; aspect-ratio:1/1; object-fit:cover; }
+  .facts{ display:grid; gap:14px; }
+  .fact{ background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px 18px; box-shadow:var(--shadow); }
+  .fact .n{ font-family:"Fraunces",serif; font-weight:700; font-size:1.5rem; color:var(--gold-deep); line-height:1; }
+  .fact .c{ font-size:.85rem; color:var(--ink-soft); margin-top:4px; }
+
+  /* -------- SKILLS -------- */
+  .skill-groups{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+  @media (max-width:800px){ .skill-groups{grid-template-columns:1fr;} }
+  .skill-card{
+    background:var(--panel); border:1px solid var(--line); border-top:3px solid var(--gold);
+    border-radius:var(--radius); padding:26px 24px; box-shadow:var(--shadow);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .skill-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+  .skill-card .badge{
+    width:42px; height:42px; border-radius:50%; background:var(--gold-soft); color:var(--gold-deep);
+    display:flex; align-items:center; justify-content:center; font-family:"Fraunces",serif;
+    font-weight:700; font-size:1.05rem; margin-bottom:16px;
+  }
+  .skill-card h4{ font-family:"Fraunces",serif; font-weight:700; font-size:1.1rem; margin:0 0 4px; color:var(--ink); }
+  .skill-card .sub{ font-size:.82rem; color:var(--ink-soft); margin-bottom:16px; }
+  .skill-card .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .skill-card .chip{ font-size:.83rem; background:var(--panel-2); border:1px solid var(--line); border-radius:20px; padding:6px 13px; }
+
+  /* -------- PROYECTOS -------- */
+  #proyectos{background:var(--panel-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .mini-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:28px; }
+  .mini-proj{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;
+  }
+  .mini-proj .browser{ border-bottom:1px solid var(--line); }
+  .mini-proj .browser .bar{ display:flex; align-items:center; gap:8px; padding:9px 12px; background:var(--panel-dark-2); }
+  .mini-proj .browser .dot{width:8px; height:8px; border-radius:50%;}
+  .mini-proj .browser .dot.r{background:#E0685A;} .mini-proj .browser .dot.y{background:#E0B84E;} .mini-proj .browser .dot.g{background:#4FAE68;}
+  .mini-proj .browser .url{ flex:1; margin-left:6px; background:rgba(255,255,255,.06); border-radius:6px; padding:3px 9px; font-family:"IBM Plex Mono",monospace; font-size:.68rem; color:var(--on-dark-soft); text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .mini-proj .shot-wrap{ background:var(--panel-dark-2); }
+  .mini-proj .shot-wrap img{ display:block; width:100%; }
+  .mini-proj .body{ padding:22px 24px 24px; }
+  .mini-proj .ctx{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gold-deep); margin-bottom:10px; }
+  .mini-proj h4{ font-family:"Fraunces",serif; font-weight:700; font-size:1.2rem; margin:0 0 10px; }
+  .mini-proj p.desc{ font-size:.93rem; margin:0 0 14px; color:var(--ink-soft); }
+  ul.feat2{ font-size:.87rem; margin:0 0 16px; padding-left:1.1em; }
+  ul.feat2 li{margin-bottom:5px;}
+  .stack2{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px; }
+  .stack2 span{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; background:var(--panel-2); border:1px solid var(--line); border-radius:6px; padding:3px 9px; }
+  .mini-proj .link2{ font-size:.85rem; font-weight:600; color:var(--gold-deep); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:1px; }
+  .mini-proj .note{ font-size:.82rem; color:var(--ink-soft); font-style:italic; }
+
+
+  /* -------- SITIOS RECUPERADOS -------- */
+  #recuperados{ background:var(--panel-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .rec-intro{ color:var(--ink-soft); max-width:42em; margin-bottom:30px; }
+  .rec-stats{ margin-bottom:40px !important; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-lg); margin-bottom:24px; }
+  .rec-stats .cell{ background:var(--panel); padding:20px 14px; text-align:center; }
+  .rec-stats .num{ font-family:"Fraunces",serif; font-weight:700; font-size:1.7rem; color:var(--gold-deep); line-height:1; margin-bottom:6px; font-variant-numeric:tabular-nums; }
+  .rec-stats .cap{ font-size:.76rem; color:var(--ink-soft); line-height:1.35; }
+  @media (max-width:640px){ .rec-stats{grid-template-columns:1fr 1fr;} }
+  .rec-story{ display:grid; grid-template-columns:1fr auto 1fr; gap:18px; align-items:center; margin-bottom:56px; }
+  .rec-story .st{ background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow); font-size:.92rem; color:var(--ink-soft); }
+  .rec-story .st b{ display:block; font-family:"Fraunces",serif; font-size:1.05rem; margin-bottom:4px; }
+  .rec-story .arrow{ font-size:1.6rem; color:var(--gold); }
+  @media (max-width:700px){ .rec-story{grid-template-columns:1fr;} .rec-story .arrow{transform:rotate(90deg); justify-self:center;} }
+  .case{ --accent:var(--gold); background:var(--panel); border:1px solid var(--line); border-top:4px solid var(--accent); border-radius:var(--radius); box-shadow:var(--shadow); padding:26px 26px 24px; margin-bottom:40px; }
+  .case-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap; margin-bottom:10px; }
+  .case .ctx{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gold-deep); margin-bottom:4px; }
+  .case h3{ font-family:"Fraunces",serif; font-size:1.55rem; margin:0; }
+  .case .role{ font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; background:var(--panel-dark); color:var(--gold-bright); padding:4px 12px; border-radius:20px; white-space:nowrap; }
+  .case .lede{ color:var(--ink-soft); max-width:46em; margin:0 0 20px; }
+  .tabs{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .tabs button{ font:inherit; font-size:.84rem; font-weight:500; cursor:pointer; background:var(--panel-2); color:var(--ink); border:1px solid var(--line); border-radius:20px; padding:6px 15px; }
+  .tabs button[aria-selected="true"]{ background:var(--accent); border-color:var(--accent); color:#1c1608; font-weight:600; }
+  .tabs button:focus-visible, .stage input:focus-visible ~ .bar{ outline:2px solid var(--gold-deep); outline-offset:2px; }
+  .cmp-panel[hidden]{ display:none; }
+  .stage{ position:relative; overflow:hidden; border-radius:10px; border:1px solid var(--line); background:var(--panel-dark-2); aspect-ratio:16/10; user-select:none; -webkit-user-select:none; }
+  .cmp-panel.mob .stage{ aspect-ratio:5/7; max-width:340px; margin-inline:auto; }
+  .stage img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top; display:block; pointer-events:none; }
+  .stage .clip{ position:absolute; inset:0; clip-path:inset(0 calc(100% - var(--pos)) 0 0); }
+  .stage .lbl{ position:absolute; top:10px; z-index:3; font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.1em; background:var(--panel-dark); color:var(--on-dark); padding:3px 10px; border-radius:20px; }
+  .stage .l-b{ left:10px; } .stage .l-a{ right:10px; color:var(--gold-bright); }
+  .stage .bar{ position:absolute; top:0; bottom:0; left:var(--pos); width:3px; margin-left:-1.5px; background:var(--gold-bright); z-index:2; box-shadow:0 0 0 1px rgba(0,0,0,.35); }
+  .stage .bar i{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:38px; height:38px; border-radius:50%; background:var(--gold-bright); color:#241C0F; font-style:normal; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,.4); font-size:1rem; }
+  .stage input{ position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:ew-resize; z-index:4; touch-action:pan-y; }
+  .cmp .cap{ font-size:.82rem; color:var(--ink-soft); margin:10px 0 0; text-align:center; }
+  .ba-cols{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:22px; }
+  @media (max-width:760px){ .ba-cols{grid-template-columns:1fr;} }
+  .ba-cols .col{ border-radius:10px; padding:16px 18px; border:1px solid var(--line); }
+  .ba-cols .before{ background:var(--panel-2); }
+  .ba-cols .after{ background:var(--gold-soft); border-color:var(--accent); }
+  .ba-cols h4{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; margin:0 0 8px; color:var(--gold-deep); }
+  .ba-cols ul{ margin:0; padding-left:1.1em; font-size:.9rem; }
+  .ba-cols li{ margin-bottom:6px; }
+  .case .stack2{ margin:18px 0 0; }
+  .case .live{ display:inline-block; margin-top:16px; font-weight:600; font-size:.92rem; color:var(--gold-deep); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:1px; }
+  .case .note{ display:block; margin-top:10px; font-size:.82rem; color:var(--ink-soft); font-style:italic; }
+  .next{ background:var(--panel); border:1px dashed var(--line); border-radius:var(--radius); padding:20px 24px; display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .next h3{ font-family:"Fraunces",serif; margin:0; font-size:1.2rem; }
+  .next p{ margin:0; color:var(--ink-soft); font-size:.92rem; flex:1 1 320px; }
+  .rec-proof{ background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:var(--radius); padding:26px 28px; margin-bottom:40px; box-shadow:var(--shadow); }
+  .rec-proof-h{ font-family:"Fraunces",serif; font-weight:700; font-size:1.35rem; margin:0 0 8px; color:var(--ink); }
+  .rec-proof-t{ margin:0 0 18px; color:var(--ink-soft); max-width:46em; }
+  .rec-proof-l{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .rec-proof-l li{ background:var(--panel-2); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .rec-proof-l b{ display:block; font-family:"IBM Plex Mono",monospace; font-size:.74rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:4px; }
+  .rec-proof-l span{ font-size:.88rem; color:var(--ink-soft); line-height:1.45; }
+  @media (max-width:760px){ .rec-proof-l{ grid-template-columns:1fr; } .rec-proof{ padding:22px 20px; } }
+  .case-side{ display:flex; flex-direction:column; align-items:flex-end; gap:12px; }
+  .case-fig{ text-align:right; max-width:260px; }
+  .case-fig b{ display:block; font-family:"Fraunces",serif; font-weight:700; font-size:2.1rem; line-height:1; color:var(--gold-deep); font-variant-numeric:tabular-nums; }
+  .case-fig span{ display:block; font-size:.8rem; color:var(--ink-soft); line-height:1.35; margin-top:4px; }
+  @media (max-width:640px){ .case-side{ align-items:flex-start; } .case-fig{ text-align:left; } }
+  .nf{ background:var(--panel); border:1px solid var(--line); border-top:4px solid #e0344a; border-radius:var(--radius); box-shadow:var(--shadow-lg); padding:28px 28px 24px; margin-bottom:34px; --accent:#e0344a; }
+  .nf-head{ display:grid; grid-template-columns:1fr 280px; gap:30px; align-items:start; margin-bottom:22px; }
+  .nf .ctx{ font-family:"IBM Plex Mono",monospace; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gold-deep); margin-bottom:6px; }
+  .nf h3{ font-family:"Fraunces",serif; font-size:1.9rem; margin:0 0 10px; }
+  .nf .lede{ color:var(--ink-soft); margin:0; max-width:44em; }
+  .nf-figs{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  .nf-figs li{ background:var(--panel-2); border:1px solid var(--line); border-radius:10px; padding:12px 14px; display:flex; gap:12px; align-items:center; }
+  .nf-figs b{ font-family:"Fraunces",serif; font-size:1.8rem; line-height:1; color:var(--gold-deep); min-width:52px; font-variant-numeric:tabular-nums; }
+  .nf-figs span{ font-size:.82rem; color:var(--ink-soft); line-height:1.35; }
+  .nf-shot{ border-radius:10px; overflow:hidden; border:1px solid var(--line); background:#0d0d12; }
+  .nf-shot img{ display:block; width:100%; height:auto; }
+  .nf .tabs button[aria-selected="true"]{ color:#fff; }
+  .nf-grid{ display:grid; grid-template-columns:1.15fr 1fr; gap:28px; margin-top:24px; }
+  .nf-col h4{ font-family:"IBM Plex Mono",monospace; font-size:.74rem; text-transform:uppercase; letter-spacing:.08em; color:var(--gold-deep); margin:0 0 10px; }
+  .nf-col h4 + ul, .nf-col .nf-chat{ margin-bottom:20px; }
+  .nf-col ul{ margin:0; padding-left:1.1em; font-size:.9rem; }
+  .nf-col li{ margin-bottom:7px; }
+  .nf-chat{ background:var(--panel-dark); border-radius:12px; padding:16px; display:grid; gap:10px; font-size:.88rem; }
+  .nf-chat p{ margin:0; padding:10px 13px; border-radius:10px; line-height:1.45; }
+  .nf-chat .me{ background:rgba(217,174,100,.16); color:var(--on-dark); justify-self:end; max-width:92%; }
+  .nf-chat .ai{ background:rgba(255,255,255,.05); color:var(--on-dark-soft); max-width:92%; }
+  .nf-chat code{ font-family:"IBM Plex Mono",monospace; font-size:.8rem; color:var(--gold-bright); }
+  .nf .stack2{ margin:18px 0 0; }
+  .nf .note{ display:block; margin-top:10px; font-size:.82rem; color:var(--ink-soft); font-style:italic; }
+  @media (max-width:860px){ .nf-head,.nf-grid{ grid-template-columns:1fr; } .nf{ padding:22px 18px; } }
+  .rec-note{ margin-top:22px; font-size:.85rem; color:var(--ink-soft); max-width:46em; }
+
+  /* -------- CONTACTO -------- */
+  #contacto{background:var(--panel-dark); color:var(--on-dark); border-top:3px solid var(--gold);}
+  #contacto h2{color:var(--on-dark);}
+  #contacto .eyebrow{color:var(--gold-bright);} #contacto .eyebrow::before{background:var(--gold-bright);}
+  .contact-row{display:flex; gap:16px; flex-wrap:wrap; margin-top:26px;}
+  .contact-card{
+    flex:1; min-width:200px; background:rgba(255,255,255,.04); border:1px solid rgba(217,174,100,.25);
+    border-radius:12px; padding:20px 22px; text-decoration:none; color:var(--on-dark);
+  }
+  .contact-card .l{font-family:"IBM Plex Mono",monospace; font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--gold-bright); margin-bottom:8px; display:block;}
+  .contact-card .v{font-weight:600; font-size:1.02rem;}
+
+  .contact-row{ display:grid !important; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:16px; }
+  .contact-card{ display:flex !important; align-items:center; gap:14px; min-width:0; }
+  .contact-card .tx{ min-width:0; }
+  .contact-card .v{ display:block; overflow-wrap:anywhere; font-size:.98rem; }
+  .contact-card .ic{ flex:0 0 40px; width:40px; height:40px; }
+  .contact-card .badge{ display:flex; align-items:center; justify-content:center; border-radius:10px; background:rgba(217,174,100,.16); color:var(--gold-bright); font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:.78rem; }
+  footer.end{ background:var(--panel-dark-2); color:var(--on-dark-soft); font-size:.85rem; padding-block:22px; }
+  footer.end .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap side">
+    <a href="#inicio" class="brand">Leonel Zalazar</a>
+    <div class="navlinks">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#recuperados">Sitios recuperados</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap side">
+    <div class="kicker2 rise">Desarrollo de software &amp; SEO</div>
+    <h1 class="rise">Construyo software y sitios web —<br>y hago que los encuentren.</h1>
+    <p class="hero-lede rise">Soy Leonel Zalazar, desarrollador web de Tucumán. Diseño y programo sitios web y tiendas online, y los optimizo para que aparezcan en Google.</p>
+    <div class="cta-row rise">
+      <a href="#recuperados" class="btn primary">Ver mi trabajo →</a>
+      <a href="cv-leonel-zalazar.pdf" class="btn ghost" download>Descargar CV (PDF)</a>
+      <a href="#contacto" class="btn ghost">Contactarme</a>
+    </div>
+    <div class="hero-tags rise">
+      <span>WordPress &amp; WooCommerce</span>
+      <span>PHP &amp; JavaScript</span>
+      <span>SEO Técnico &amp; Local</span>
+      <span>Programación con IA</span>
+      <span>Tucumán, Argentina</span>
+    </div>
+  </div>
+</header>
+
+<section id="sobre" class="side">
+  <div class="wrap">
+    <div class="eyebrow">Sobre mí</div>
+    <div class="grid" style="margin-top:8px;">
+      <div>
+      <div class="portrait"><img src="img/foto-perfil-leonel.webp" alt="Foto de Leonel Zalazar"></div>
+      <div class="facts">
+        <div class="fact"><div class="n">5 años</div><div class="c">programando y optimizando proyectos propios, desde los 18</div></div>
+        <div class="fact"><div class="n">UNSTA</div><div class="c">Tecnicatura en Desarrollo y Calidad de Software — últimas materias</div></div>
+        <div class="fact"><div class="n">9</div><div class="c">proyectos que podés ver acá: 5 sitios propios rediseñados, una tienda online en línea, IA aplicada a YouTube y más</div></div>
+      </div>
+      </div>
+      <div>
+        <p>Empecé a programar de forma autodidacta a los 18 años, armando software y sitios web propios. Con el tiempo sumé SEO por necesidad — de nada sirve construir algo si nadie lo encuentra — y lo aprendí de la misma forma: probándolo en mis propios proyectos.</p>
+        <p>De ahí en más fui armando de todo un poco: una tienda online en WordPress y WooCommerce para un cliente, hoy en línea (con Mercado Pago, seguridad y rendimiento resueltos, más una auditoría de SEO para posicionarlo en su mercado local), una herramienta en Python que analiza nichos de YouTube con IA y que hoy Claude puede usar directamente, y un ecommerce de videojuegos hecho para la facultad. Sumé Malajo, un sistema de pedidos que hoy usa un negocio real. Los cuatro están más abajo, y antes los sitios que recuperé.</p>
+        <p>Actualmente estoy terminando la <b>Tecnicatura en Desarrollo y Calidad de Software</b> en la Universidad Santo Tomás de Aquino (Campus Yerba Buena, Tucumán), y buscando sumar ese mismo criterio — desarrollo + posicionamiento — a un proyecto freelance nuevo o a un rol fijo/remoto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="recuperados" class="side">
+  <div class="wrap">
+    <div class="eyebrow">Sitios recuperados y rediseñados</div>
+    <h2 style="margin-bottom:12px;">Así empezaron, así quedaron</h2>
+    <p class="rec-intro">Cinco sitios web míos que rediseñé desde cero. Deslizá cada captura para ver el antes y el después.</p>
+    <div class="rec-proof">
+      <p class="rec-proof-h">No eran prácticas: eran sitios con visitas reales.</p>
+      <p class="rec-proof-t">Antes de rediseñarlos, estos sitios estaban posicionados en Google y generaban ingresos. Los optimicé para SEO y los moneticé con Google AdSense combinado con enlaces de afiliado de Amazon.</p>
+      <ul class="rec-proof-l">
+        <li><b>SEO</b><span>Posicionados en Google con contenido, SEO técnico y páginas programáticas.</span></li>
+        <li><b>Google AdSense</b><span>Cuatro de los cinco sitios se monetizaban con anuncios.</span></li>
+        <li><b>Afiliados de Amazon</b><span>Reseñas y comparativas con enlaces de afiliado.</span></li>
+      </ul>
+    </div>
+    <article class="case" id="caso-alas" style="--accent:#d9b872">
+      <div class="case-head">
+        <div><div class="ctx">Recuperación + rediseño · WordPress</div><h3>Alas Celestiales</h3></div><div class="case-side"><span class="role">Flagship · atmósfera</span><div class="case-fig"><b>212</b><span>oraciones con Copiar e Imprimir, en 117 publicaciones</span></div></div>
+      </div>
+      <p class="lede">Sitio de oraciones católicas. Pasó de una plantilla azul genérica a un tema propio, «cosmos sagrado», con partículas doradas y las oraciones como protagonistas.</p>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de Alas Celestiales"><button type="button" role="tab" id="t-alas-0" aria-controls="p-alas-0" aria-selected="true" tabindex="0">Una oración</button><button type="button" role="tab" id="t-alas-1" aria-controls="p-alas-1" aria-selected="false" tabindex="-1">Lista de oraciones</button><button type="button" role="tab" id="t-alas-2" aria-controls="p-alas-2" aria-selected="false" tabindex="-1">En celular</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-alas-0" aria-labelledby="t-alas-0"><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/alas-oracion-despues.webp" alt="Página de «Oración a San Rafael para la salud», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/alas-oracion-antes.webp" alt="Página de «Oración a San Rafael para la salud», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de «Oración a San Rafael para la salud»"></div><p class="cap">Página de «Oración a San Rafael para la salud» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-alas-1" aria-labelledby="t-alas-1" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/alas-lista-despues.webp" alt="Listado «Oraciones», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/alas-lista-antes.webp" alt="Listado «Oraciones», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Listado «Oraciones»"></div><p class="cap">Listado «Oraciones» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel mob" role="tabpanel" id="p-alas-2" aria-labelledby="t-alas-2" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/alas-movil-despues.webp" alt="La misma oración en pantalla de celular, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/alas-movil-antes.webp" alt="La misma oración en pantalla de celular, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: La misma oración en pantalla de celular"></div><p class="cap">La misma oración en pantalla de celular · <em>arrastrá para comparar</em></p></div>
+      </div>
+      <div class="ba-cols">
+        <div class="col before"><h4>Cómo empezó</h4><ul><li>Plantilla prearmada azul, igual a la de cualquier otro sitio</li><li>La oración quedaba mezclada con el texto, sin forma de copiarla ni imprimirla</li><li>Cabecera con buscador y menú de categorías, sin identidad propia</li></ul></div>
+        <div class="col after"><h4>Cómo quedó</h4><ul><li>Tema propio «cosmos sagrado»: partículas doradas en canvas que se pausan fuera de pantalla y respetan «reducir movimiento»</li><li>Bloques de oración automáticos con Copiar e Imprimir (212 oraciones en 64 posts)</li><li>SEO propio sin plugin, buscador en vivo que funciona sin PHP y oración del día</li></ul></div>
+      </div>
+      <div class="stack2"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>Canvas</span><span>JSON-LD</span></div>
+      <a class="live" href="https://alascelestiales.netlify.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+      
+    </article>
+    <article class="case" id="caso-dybviden" style="--accent:#5f8a94">
+      <div class="case-head">
+        <div><div class="ctx">Recuperación + rediseño · WordPress</div><h3>Dybviden</h3></div><div class="case-side"><span class="role">Flagship · experiencia tipo app</span><div class="case-fig"><b>17</b><span>tests con motor propio · 577 completados por usuarios reales en su último año online</span></div></div>
+      </div>
+      <p class="lede">Tests psicológicos y de habilidades en danés. Reemplacé la presentación del plugin por un motor propio: una pregunta por pantalla, progreso y resultados claros.</p>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de Dybviden"><button type="button" role="tab" id="t-dybviden-0" aria-controls="p-dybviden-0" aria-selected="true" tabindex="0">Portada</button><button type="button" role="tab" id="t-dybviden-1" aria-controls="p-dybviden-1" aria-selected="false" tabindex="-1">Un test</button><button type="button" role="tab" id="t-dybviden-2" aria-controls="p-dybviden-2" aria-selected="false" tabindex="-1">DISC (100 preguntas)</button><button type="button" role="tab" id="t-dybviden-3" aria-controls="p-dybviden-3" aria-selected="false" tabindex="-1">En celular</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-dybviden-0" aria-labelledby="t-dybviden-0"><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dyb-portada-despues.webp" alt="Página de inicio, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dyb-portada-antes.webp" alt="Página de inicio, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de inicio"></div><p class="cap">Página de inicio · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-dybviden-1" aria-labelledby="t-dybviden-1" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dyb-test-despues.webp" alt="Página del «Demens test», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dyb-test-antes.webp" alt="Página del «Demens test», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página del «Demens test»"></div><p class="cap">Página del «Demens test» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-dybviden-2" aria-labelledby="t-dybviden-2" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dyb-disc-despues.webp" alt="Página del «DISC personlighedstest», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dyb-disc-antes.webp" alt="Página del «DISC personlighedstest», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página del «DISC personlighedstest»"></div><p class="cap">Página del «DISC personlighedstest» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel mob" role="tabpanel" id="p-dybviden-3" aria-labelledby="t-dybviden-3" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dyb-movil-despues.webp" alt="El mismo test en pantalla de celular, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dyb-movil-antes.webp" alt="El mismo test en pantalla de celular, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: El mismo test en pantalla de celular"></div><p class="cap">El mismo test en pantalla de celular · <em>arrastrá para comparar</em></p></div>
+      </div>
+      <div class="ba-cols">
+        <div class="col before"><h4>Cómo empezó</h4><ul><li>Aspecto de plantilla con el test dentro de un recuadro</li><li>Instrucciones largas con emojis antes de empezar</li><li>Sin una experiencia de «app»: todo en una página de texto</li></ul></div>
+        <div class="col after"><h4>Cómo quedó</h4><ul><li>Motor propio de 17 tests sobre las tablas del plugin: una pregunta por pantalla, progreso, atrás y teclas 1-9</li><li>Resultados nunca clínicos, con ayuda local en Dinamarca en cada test</li><li>SEO propio, JSON-LD y sitemap; el test viaja embebido en la página, listo para hosting estático</li></ul></div>
+      </div>
+      <div class="stack2"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>SEO técnico</span></div>
+      <a class="live" href="https://dybviden.netlify.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+      
+    </article>
+    <article class="case" id="caso-conduce" style="--accent:#FFB020">
+      <div class="case-head">
+        <div><div class="ctx">Recuperación + rediseño · WordPress + Three.js</div><h3>Conduce Confiado</h3></div><div class="case-side"><span class="role">Modernizar · prioridad portfolio</span><div class="case-fig"><b>746</b><span>páginas rediseñadas sin cambiar ninguna URL</span></div></div>
+      </div>
+      <p class="lede">El sitio de presión de neumáticos. Un tema propio, «Instrumento», rehízo las 746 páginas sin cambiar una sola URL.</p>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de Conduce Confiado"><button type="button" role="tab" id="t-conduce-0" aria-controls="p-conduce-0" aria-selected="true" tabindex="0">Portada</button><button type="button" role="tab" id="t-conduce-1" aria-controls="p-conduce-1" aria-selected="false" tabindex="-1">Ficha de un modelo</button><button type="button" role="tab" id="t-conduce-2" aria-controls="p-conduce-2" aria-selected="false" tabindex="-1">Marca</button><button type="button" role="tab" id="t-conduce-3" aria-controls="p-conduce-3" aria-selected="false" tabindex="-1">Índice</button><button type="button" role="tab" id="t-conduce-4" aria-controls="p-conduce-4" aria-selected="false" tabindex="-1">Artículo</button><button type="button" role="tab" id="t-conduce-5" aria-controls="p-conduce-5" aria-selected="false" tabindex="-1">En celular</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-conduce-0" aria-labelledby="t-conduce-0"><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-portada-despues.webp" alt="Página de inicio, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-portada-antes.webp" alt="Página de inicio, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de inicio"></div><p class="cap">Página de inicio · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-conduce-1" aria-labelledby="t-conduce-1" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-modelo-despues.webp" alt="Presión de neumáticos del Audi A3, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-modelo-antes.webp" alt="Presión de neumáticos del Audi A3, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Presión de neumáticos del Audi A3"></div><p class="cap">Presión de neumáticos del Audi A3 · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-conduce-2" aria-labelledby="t-conduce-2" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-marca-despues.webp" alt="Presión de neumáticos Audi: página de marca, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-marca-antes.webp" alt="Presión de neumáticos Audi: página de marca, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Presión de neumáticos Audi: página de marca"></div><p class="cap">Presión de neumáticos Audi: página de marca · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-conduce-3" aria-labelledby="t-conduce-3" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-hub-despues.webp" alt="Presión de neumáticos: índice de marcas, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-hub-antes.webp" alt="Presión de neumáticos: índice de marcas, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Presión de neumáticos: índice de marcas"></div><p class="cap">Presión de neumáticos: índice de marcas · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-conduce-4" aria-labelledby="t-conduce-4" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-articulo-despues.webp" alt="«Cómo evitar dormirse manejando», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-articulo-antes.webp" alt="«Cómo evitar dormirse manejando», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: «Cómo evitar dormirse manejando»"></div><p class="cap">«Cómo evitar dormirse manejando» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel mob" role="tabpanel" id="p-conduce-5" aria-labelledby="t-conduce-5" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/cc-movil-despues.webp" alt="La ficha del Audi A3 en pantalla de celular, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/cc-movil-antes.webp" alt="La ficha del Audi A3 en pantalla de celular, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: La ficha del Audi A3 en pantalla de celular"></div><p class="cap">La ficha del Audi A3 en pantalla de celular · <em>arrastrá para comparar</em></p></div>
+      </div>
+      <div class="ba-cols">
+        <div class="col before"><h4>Cómo empezó</h4><ul><li>Plantilla genérica gris azulada con el buscador arriba</li><li>La presión aparecía en una tabla de colores, sin ninguna herramienta</li><li>Artículos con una imagen suelta y texto corrido</li></ul></div>
+        <div class="col after"><h4>Cómo quedó</h4><ul><li>Neumático 3D en tiempo real (Three.js, generado por código) y buscador de 610 modelos</li><li>Manómetros SVG animados, selector de motor y medida, y «tu neumático a escala» con datos calculados</li><li>746 páginas con plantilla propia y las mismas URLs de siempre</li></ul></div>
+      </div>
+      <div class="stack2"><span>WordPress</span><span>PHP</span><span>Three.js</span><span>SVG</span></div>
+      <a class="live" href="https://conduceconfiado.netlify.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+    </article>
+    <article class="case" id="caso-cerrajeros" style="--accent:#F5B722">
+      <div class="case-head">
+        <div><div class="ctx">Recuperación + rediseño · WordPress + plugin propio</div><h3>Cerrajeros Cerca de Mí</h3></div><div class="case-side"><span class="role">Modernizar · profesional y conversión</span><div class="case-fig"><b>1193</b><span>negocios en el directorio</span></div></div>
+      </div>
+      <p class="lede">Directorio de 1193 negocios. Aquí el rediseño fue deliberadamente sobrio: cada decisión busca que la persona encuentre y llame.</p>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de Cerrajeros Cerca de Mí"><button type="button" role="tab" id="t-cerrajeros-0" aria-controls="p-cerrajeros-0" aria-selected="true" tabindex="0">Portada</button><button type="button" role="tab" id="t-cerrajeros-1" aria-controls="p-cerrajeros-1" aria-selected="false" tabindex="-1">Una ciudad</button><button type="button" role="tab" id="t-cerrajeros-2" aria-controls="p-cerrajeros-2" aria-selected="false" tabindex="-1">Índice</button><button type="button" role="tab" id="t-cerrajeros-3" aria-controls="p-cerrajeros-3" aria-selected="false" tabindex="-1">Un estado</button><button type="button" role="tab" id="t-cerrajeros-4" aria-controls="p-cerrajeros-4" aria-selected="false" tabindex="-1">Guía</button><button type="button" role="tab" id="t-cerrajeros-5" aria-controls="p-cerrajeros-5" aria-selected="false" tabindex="-1">Contacto</button><button type="button" role="tab" id="t-cerrajeros-6" aria-controls="p-cerrajeros-6" aria-selected="false" tabindex="-1">En celular</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-0" aria-labelledby="t-cerrajeros-0"><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-portada-despues.webp" alt="Página de inicio, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-portada-antes.webp" alt="Página de inicio, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de inicio"></div><p class="cap">Página de inicio · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-1" aria-labelledby="t-cerrajeros-1" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-ciudad-despues.webp" alt="Cerrajeros en Phoenix (Arizona), después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-ciudad-antes.webp" alt="Cerrajeros en Phoenix (Arizona), antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Cerrajeros en Phoenix (Arizona)"></div><p class="cap">Cerrajeros en Phoenix (Arizona) · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-2" aria-labelledby="t-cerrajeros-2" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-indice-despues.webp" alt="Índice del directorio, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-indice-antes.webp" alt="Índice del directorio, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Índice del directorio"></div><p class="cap">Índice del directorio · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-3" aria-labelledby="t-cerrajeros-3" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-estado-despues.webp" alt="Cerrajeros en California, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-estado-antes.webp" alt="Cerrajeros en California, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Cerrajeros en California"></div><p class="cap">Cerrajeros en California · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-4" aria-labelledby="t-cerrajeros-4" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-guia-despues.webp" alt="Artículo de guía, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-guia-antes.webp" alt="Artículo de guía, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Artículo de guía"></div><p class="cap">Artículo de guía · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-cerrajeros-5" aria-labelledby="t-cerrajeros-5" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-contacto-despues.webp" alt="Página de contacto, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-contacto-antes.webp" alt="Página de contacto, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de contacto"></div><p class="cap">Página de contacto · <em>arrastrá para comparar</em></p></div><div class="cmp-panel mob" role="tabpanel" id="p-cerrajeros-6" aria-labelledby="t-cerrajeros-6" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/ce-movil-despues.webp" alt="La portada en pantalla de celular, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/ce-movil-antes.webp" alt="La portada en pantalla de celular, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: La portada en pantalla de celular"></div><p class="cap">La portada en pantalla de celular · <em>arrastrá para comparar</em></p></div>
+      </div>
+      <div class="ba-cols">
+        <div class="col before"><h4>Cómo empezó</h4><ul><li>Plantilla roja, texto genérico y una lista larga por ciudad, sin filtros</li><li>Portada sin buscador por ubicación ni mapa de estados</li><li>Datos pegados dentro de cada página, difíciles de editar</li></ul></div>
+        <div class="col after"><h4>Cómo quedó</h4><ul><li>Buscador por ciudad, «usar mi ubicación», mapa de estados y mapa por ciudad</li><li>Llamada con un toque, «abierto ahora» en la hora de la ciudad y barra de llamada fija en celular</li><li>Tema y plugin propios: negocios editables, medición de toques y reclamos. Lighthouse móvil: 100 en rendimiento, accesibilidad y SEO</li></ul></div>
+      </div>
+      <div class="stack2"><span>WordPress</span><span>PHP</span><span>Plugin propio</span><span>Leaflet</span></div>
+      
+      <a class="live" href="https://cerrajeros-cerca-de-mi.netlify.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+    </article>
+    <article class="case" id="caso-drivecalmly" style="--accent:#3F6F63">
+      <div class="case-head">
+        <div><div class="ctx">Recuperación + rediseño · WordPress</div><h3>Drivecalmly</h3></div><div class="case-side"><span class="role">Modernizar · revista editorial</span><div class="case-fig"><b>612</b><span>modelos de 74 marcas en el índice de la A a la Z</span></div></div>
+      </div>
+      <p class="lede">La versión en inglés de Conduce Confiado, con el mismo contenido pero otro rediseño a propósito: una revista editorial clara en lugar de una herramienta oscura. Mismo dato, otra forma de contarlo.</p>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de Drivecalmly"><button type="button" role="tab" id="t-drivecalmly-0" aria-controls="p-drivecalmly-0" aria-selected="true" tabindex="0">Portada</button><button type="button" role="tab" id="t-drivecalmly-1" aria-controls="p-drivecalmly-1" aria-selected="false" tabindex="-1">Ficha de un modelo</button><button type="button" role="tab" id="t-drivecalmly-2" aria-controls="p-drivecalmly-2" aria-selected="false" tabindex="-1">Marca</button><button type="button" role="tab" id="t-drivecalmly-3" aria-controls="p-drivecalmly-3" aria-selected="false" tabindex="-1">Artículo</button><button type="button" role="tab" id="t-drivecalmly-4" aria-controls="p-drivecalmly-4" aria-selected="false" tabindex="-1">En celular</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-drivecalmly-0" aria-labelledby="t-drivecalmly-0"><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dc-portada-despues.webp" alt="Página de inicio, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dc-portada-antes.webp" alt="Página de inicio, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de inicio"></div><p class="cap">Página de inicio · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-drivecalmly-1" aria-labelledby="t-drivecalmly-1" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dc-modelo-despues.webp" alt="Tire pressure del Audi A3, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dc-modelo-antes.webp" alt="Tire pressure del Audi A3, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Tire pressure del Audi A3"></div><p class="cap">Tire pressure del Audi A3 · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-drivecalmly-2" aria-labelledby="t-drivecalmly-2" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dc-marca-despues.webp" alt="Página de la marca Audi, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dc-marca-antes.webp" alt="Página de la marca Audi, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: Página de la marca Audi"></div><p class="cap">Página de la marca Audi · <em>arrastrá para comparar</em></p></div><div class="cmp-panel desk" role="tabpanel" id="p-drivecalmly-3" aria-labelledby="t-drivecalmly-3" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dc-articulo-despues.webp" alt="«My car leaks oil when parked», después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dc-articulo-antes.webp" alt="«My car leaks oil when parked», antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: «My car leaks oil when parked»"></div><p class="cap">«My car leaks oil when parked» · <em>arrastrá para comparar</em></p></div><div class="cmp-panel mob" role="tabpanel" id="p-drivecalmly-4" aria-labelledby="t-drivecalmly-4" hidden><div class="stage" style="--pos:50%"><img class="im-after" loading="lazy" src="img/cmp/dc-movil-despues.webp" alt="La ficha del Audi A3 en pantalla de celular, después del rediseño"><div class="clip"><img class="im-before" loading="lazy" src="img/cmp/dc-movil-antes.webp" alt="La ficha del Audi A3 en pantalla de celular, antes del rediseño"></div><span class="lbl l-b">ANTES</span><span class="lbl l-a">DESPUÉS</span><span class="bar" aria-hidden="true"><i>⇆</i></span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y después: La ficha del Audi A3 en pantalla de celular"></div><p class="cap">La ficha del Audi A3 en pantalla de celular · <em>arrastrá para comparar</em></p></div>
+      </div>
+      <div class="ba-cols">
+        <div class="col before"><h4>Cómo empezó</h4><ul><li>La misma plantilla roja genérica que tenía Conduce Confiado</li><li>Marcas como una lista de nombres sueltos, sin datos</li><li>La presión en una tabla de colores y artículos de texto corrido</li></ul></div>
+        <div class="col after"><h4>Cómo quedó</h4><ul><li>Tema propio «Calmly»: papel claro, tipografía serif, índice de la A a la Z de 74 marcas y buscador con sugerencias</li><li>Ficha con la presión en grande (psi, bar y kPa) y el neumático dibujado a escala, que se traza como un plano</li><li>Artículos con índice que sigue la lectura, progreso de lectura y un mismo tratamiento para todas las fotos</li></ul></div>
+      </div>
+      <div class="stack2"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>SVG</span><span>Diseño editorial</span></div>
+      <a class="live" href="https://drivecalmly.netlify.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a>
+    </article>
+  </div>
+</section>
+
+<section id="proyectos" class="side">
+  <div class="wrap">
+    <div class="eyebrow">Proyectos</div>
+    <h2 style="margin-bottom:12px;">Lo que construí hasta ahora</h2>
+    <p style="color:var(--ink-soft); max-width:38em; margin-bottom:36px;">Cuatro proyectos, cuatro problemas distintos — una tienda online real para un cliente, hoy en línea, una herramienta con IA para YouTube, un ecommerce de facultad, y una gestión de pedidos que hoy usa un negocio real.</p>
+    <article class="nf" id="nichefinder">
+      <div class="nf-head">
+        <div>
+          <div class="ctx">Proyecto propio · Python + IA · App, terminal y Claude</div>
+          <h3>NicheFinder Pro</h3>
+          <p class="lede">Software que investiga nichos de YouTube y estima qué tan viable es monetizarlos. Empezó como una app de escritorio y hoy también funciona por terminal y <b>conectado a Claude</b>: le pedís en lenguaje natural que busque canales, mida un nicho o arme un plan, y lo hace usando el propio software.</p>
+        </div>
+        <ul class="nf-figs">
+          <li><b>33</b><span>herramientas que Claude puede usar (servidor MCP)</span></li>
+          <li><b>3</b><span>formas de usarlo: app, terminal y Claude</span></li>
+          <li><b>246</b><span>tests automáticos</span></li>
+        </ul>
+      </div>
+      <div class="cmp">
+        <div class="tabs" role="tablist" aria-label="Capturas de NicheFinder Pro"><button type="button" role="tab" id="t-nf-0" aria-controls="p-nf-0" aria-selected="true" tabindex="0">Inicio</button><button type="button" role="tab" id="t-nf-1" aria-controls="p-nf-1" aria-selected="false" tabindex="-1">Radar automático</button><button type="button" role="tab" id="t-nf-2" aria-controls="p-nf-2" aria-selected="false" tabindex="-1">Ideas de nichos</button><button type="button" role="tab" id="t-nf-3" aria-controls="p-nf-3" aria-selected="false" tabindex="-1">Plan de lanzamiento</button><button type="button" role="tab" id="t-nf-4" aria-controls="p-nf-4" aria-selected="false" tabindex="-1">Análisis guardados</button></div>
+        <div class="cmp-panel desk" role="tabpanel" id="p-nf-0" aria-labelledby="t-nf-0"><div class="nf-shot"><img loading="lazy" src="img/nf/inicio.webp" alt="NicheFinder Pro · Panel de inicio: cuota del día, radar, hallazgos de la semana e ideas para explorar"></div><p class="cap">Panel de inicio: cuota del día, radar, hallazgos de la semana e ideas para explorar</p></div><div class="cmp-panel desk" role="tabpanel" id="p-nf-1" aria-labelledby="t-nf-1" hidden><div class="nf-shot"><img loading="lazy" src="img/nf/radar.webp" alt="NicheFinder Pro · Radar: alertas de competidores nuevos y canales chicos que explotan, con link a cada video"></div><p class="cap">Radar: alertas de competidores nuevos y canales chicos que explotan, con link a cada video</p></div><div class="cmp-panel desk" role="tabpanel" id="p-nf-2" aria-labelledby="t-nf-2" hidden><div class="nf-shot"><img loading="lazy" src="img/nf/ideas3.webp" alt="NicheFinder Pro · Banco de ideas: nicho con su validación y 10 ideas de video con gancho y búsquedas medidas"></div><p class="cap">Banco de ideas: nicho con su validación y 10 ideas de video con gancho y búsquedas medidas</p></div><div class="cmp-panel desk" role="tabpanel" id="p-nf-3" aria-labelledby="t-nf-3" hidden><div class="nf-shot"><img loading="lazy" src="img/nf/plan.webp" alt="NicheFinder Pro · Plan de 30 días medido sobre la competencia real: ritmo, duración y estilo de títulos"></div><p class="cap">Plan de 30 días medido sobre la competencia real: ritmo, duración y estilo de títulos</p></div><div class="cmp-panel desk" role="tabpanel" id="p-nf-4" aria-labelledby="t-nf-4" hidden><div class="nf-shot"><img loading="lazy" src="img/nf/analisis.webp" alt="NicheFinder Pro · Historial de análisis: brechas de idioma, ideas validadas y lo que pide la audiencia"></div><p class="cap">Historial de análisis: brechas de idioma, ideas validadas y lo que pide la audiencia</p></div>
+      </div>
+      <div class="nf-grid">
+        <div class="nf-col">
+          <h4>Qué hace</h4>
+          <ul>
+            <li><b>Score de 0 a 100</b> según el rendimiento actual del canal: vistas de sus últimos videos largos, momentum, alcance, monetización del mercado, competencia y tendencia.</li>
+            <li><b>Brecha de idioma:</b> mide si un tema que funciona en inglés tiene hueco en español o portugués (demanda, competidores reales y autocompletado de YouTube), en las 6 direcciones.</li>
+            <li><b>Radar automático:</b> vigila canales y nichos, detecta canales chicos que explotan y descubre nichos nuevos solo; una vez por semana la IA escribe un informe con el hallazgo más prometedor.</li>
+            <li><b>Lo que pide la audiencia:</b> lee los comentarios de los videos que mejor rinden y saca las preguntas y pedidos que se repiten.</li>
+            <li><b>Ideas y plan de lanzamiento:</b> ideas de video validadas con búsquedas reales y un calendario de 30 días medido sobre la competencia.</li>
+          </ul>
+        </div>
+        <div class="nf-col">
+          <h4>Cómo se usa con Claude</h4>
+          <div class="nf-chat">
+            <p class="me">«Buscame 5 canales de historia antigua con buen potencial y poca competencia, analizá el mejor y proponeme 3 ideas de video.»</p>
+            <p class="ai">Claude llama a <code>descubrir_oportunidades</code>: busca 50 canales, los rankea, analiza el mejor y propone ideas con gancho y estructura. Todo en una sola llamada.</p>
+          </div>
+          <h4>Pensado para producción</h4>
+          <ul>
+            <li>Cuota de YouTube bajo control: caché en SQLite, costo estimado antes de cada operación y confirmación si es cara.</li>
+            <li>Costo real de IA medido en cada resultado: el informe semanal del radar cuesta menos de 1 centavo de dólar.</li>
+            <li>Una sola lógica compartida por la app, la terminal y el servidor MCP.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack2"><span>Python</span><span>MCP (Model Context Protocol)</span><span>Claude API</span><span>YouTube Data API</span><span>SQLite</span><span>pywebview</span><span>pytest</span></div>
+      <span class="note">App de escritorio de uso personal: sin link público. Las capturas son de la app real.</span>
+    </article>
+    <div class="mini-grid">
+      <div class="mini-proj">
+        <div class="browser">
+          <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="url">articuloshogarcl.com</div></div>
+          <div class="shot-wrap"><img loading="lazy" src="img/store-home.webp" alt="Home de CL Artículos del Hogar en vivo: hero oscuro con un living, una bicicleta y el buscador de productos"></div>
+        </div>
+        <div class="body">
+          <div class="ctx">Cliente real · En línea · WordPress + WooCommerce + SEO</div>
+          <h4>CL Artículos del Hogar</h4>
+          <p class="desc">Tienda online de colchones, muebles y bicicletas para un negocio de Tucumán, terminada y en línea. La construí de punta a punta y la optimicé para que la encuentren en Google.</p>
+          <ul class="feat2">
+            <li>Pagos con Mercado Pago, transferencia o efectivo, y envío gratis a toda la provincia</li>
+            <li>SEO aplicado: títulos y descripciones con producto + zona, datos estructurados y buscador interno indexable</li>
+            <li>Estrategia de SEO local a partir de una auditoría de 17 competidores</li>
+            <li>Rendimiento y seguridad optimizados (−65% de peso en fotos, carga en 2,2 s)</li>
+          </ul>
+          <div class="stack2">
+            <span>WordPress</span><span>WooCommerce</span><span>PHP</span><span>MySQL</span>
+            <span>Rank Math SEO</span><span>Mercado Pago</span>
+          </div>
+          <a class="link2" href="https://articuloshogarcl.com/" target="_blank" rel="noopener">Ver la tienda en vivo →</a>
+          <a class="link2" href="caso-seo-tucuman.html" style="margin-left:14px">Caso de SEO →</a>
+        </div>
+      </div>
+      <div class="mini-proj">
+        <div class="browser">
+          <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="url">nexusplay-ecommerce.vercel.app</div></div>
+          <div class="shot-wrap"><img loading="lazy" src="img/nexusplay-home.webp" alt="Home de NexusPlay, tienda de videojuegos físicos, con catálogo por consola"></div>
+        </div>
+        <div class="body">
+          <div class="ctx">Trabajo final de facultad · Ecommerce</div>
+          <h4>NexusPlay</h4>
+          <p class="desc">Prototipo de tienda de videojuegos físicos hecho para la facultad: catálogo completo filtrable por consola, ficha de producto y carrito funcional de punta a punta.</p>
+          <ul class="feat2">
+            <li>Catálogo con más de 50 juegos, filtrado por consola (PlayStation, Xbox, Nintendo, Sega)</li>
+            <li>Ficha de producto con stock, descuentos y especificaciones</li>
+            <li>Carrito funcional con resumen y total en tiempo real</li>
+          </ul>
+          <div class="stack2">
+            <span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Vercel</span>
+          </div>
+          <a class="link2" href="https://nexusplay-ecommerce.vercel.app/" target="_blank" rel="noopener">Ver el sitio en vivo →</a> <a class="link2" href="https://github.com/leonelzalazar912/nexusplay-ecommerce" target="_blank" rel="noopener" style="margin-left:14px">Código en GitHub →</a>
+        </div>
+      </div>
+      <div class="mini-proj">
+        <div class="browser">
+          <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><div class="url">malajo (uso interno)</div></div>
+          <div class="shot-wrap"><img loading="lazy" src="img/malajo-dashboard.webp" alt="Panel de pedidos de Malajo, con estadísticas, tickets por pedido y filtros"></div>
+        </div>
+        <div class="body">
+          <div class="ctx">MVP en uso real · Delivery</div>
+          <h4>Malajo — Gestión de pedidos</h4>
+          <p class="desc">Empezó como trabajo de facultad y hoy lo usa una hamburguesería real para tomar sus pedidos: varios productos por pedido, estados, catálogo y tarifa de envío configurables sin tocar código.</p>
+          <ul class="feat2">
+            <li>Pedidos con varios productos, búsqueda por cliente y filtro por estado</li>
+            <li>Panel de configuración: catálogo de productos y envío editables</li>
+            <li>Comprobante imprimible y avisos en tiempo real de cada acción</li>
+          </ul>
+          <div class="stack2">
+            <span>React</span><span>Vite</span><span>json-server</span><span>CSS</span>
+          </div>
+          <span class="note">Corre en la computadora del local — sin link público.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades" class="side">
+  <div class="wrap">
+    <div class="eyebrow">Habilidades</div>
+    <h2 style="margin-bottom:36px;">Lo que uso para construir y para que te encuentren</h2>
+    <div class="skill-groups">
+      <div class="skill-card">
+        <div class="badge">D</div>
+        <h4>Desarrollo</h4>
+        <div class="sub">Para construir el producto en sí</div>
+        <div class="chips">
+          <span class="chip">WordPress</span><span class="chip">WooCommerce</span>
+          <span class="chip">PHP</span><span class="chip">JavaScript</span>
+          <span class="chip">HTML &amp; CSS</span><span class="chip">MySQL</span>
+          <span class="chip">Python</span><span class="chip">Three.js</span><span class="chip">React</span><span class="chip">Git y GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="badge">S</div>
+        <h4>SEO &amp; posicionamiento</h4>
+        <div class="sub">Para que ese producto se encuentre</div>
+        <div class="chips">
+          <span class="chip">SEO Técnico</span><span class="chip">SEO Local</span>
+          <span class="chip">Auditoría SEO</span><span class="chip">Keyword Research</span>
+          <span class="chip">Google Search Console</span><span class="chip">Google Analytics</span>
+          <span class="chip">Google Business Profile</span><span class="chip">JSON-LD y datos estructurados</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="badge">IA</div>
+        <h4>Programación con IA</h4>
+        <div class="sub">Para construir más rápido y sumar IA a los productos</div>
+        <div class="chips">
+          <span class="chip">Claude Code</span><span class="chip">Desarrollo asistido por IA</span>
+          <span class="chip">Claude API</span><span class="chip">Servidores MCP</span>
+          <span class="chip">Salida estructurada (JSON)</span><span class="chip">Automatizaciones</span>
+          <span class="chip">Control de costos de IA</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="badge">R</div>
+        <h4>Rendimiento &amp; seguridad</h4>
+        <div class="sub">Para que aguante en producción</div>
+        <div class="chips">
+          <span class="chip">Optimización de velocidad</span><span class="chip">Seguridad web</span>
+          <span class="chip">Diseño responsive</span><span class="chip">Mercado Pago</span><span class="chip">Lighthouse</span><span class="chip">Accesibilidad</span><span class="chip">Netlify</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="side">
+  <div class="wrap">
+    <div class="eyebrow">Contacto</div>
+    <h2 style="max-width:22em;">¿Tenés un proyecto, o buscás sumar a alguien con este perfil?</h2>
+    <div class="contact-row">
+      <a class="contact-card" href="https://wa.me/5493815816019?text=Hola%20Leonel%2C%20vi%20tu%20portfolio" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/><path fill="#fff" d="M8.6 7.5c-.3 0-.6.1-.8.4-.5.6-.9 1.4-.6 2.4.4 1.4 1.7 3.2 3.4 4.5 1.8 1.3 3.3 1.8 4.4 1.4.9-.3 1.4-1.2 1.3-1.6l-.1-.3-1.9-.9c-.3-.1-.5 0-.7.2l-.6.7c-.1.1-.3.2-.5.1-1-.4-2.4-1.5-3-2.7-.1-.2 0-.4.1-.5l.5-.6c.2-.2.2-.4.1-.6l-.8-1.9c-.1-.3-.4-.5-.7-.5z"/></svg><span class="tx"><span class="l">WhatsApp</span><span class="v">Escribime al chat</span></span></a>
+      <a class="contact-card" href="mailto:leonelalfrezz@gmail.com"><span class="ic badge" aria-hidden="true">@</span><span class="tx"><span class="l">Email</span><span class="v">leonelalfrezz@gmail.com</span></span></a>
+      <a class="contact-card" href="https://github.com/leonelzalazar912" target="_blank" rel="noopener"><span class="ic badge" aria-hidden="true">&lt;/&gt;</span><span class="tx"><span class="l">GitHub</span><span class="v">leonelzalazar912</span></span></a>
+      <a class="contact-card" href="https://www.linkedin.com/in/leonel-alfredo-zalazar-7910a031b/" target="_blank" rel="noopener"><span class="ic badge" aria-hidden="true">in</span><span class="tx"><span class="l">LinkedIn</span><span class="v">Leonel Alfredo Zalazar</span></span></a>
+      <a class="contact-card" href="cv-leonel-zalazar.pdf" download><span class="ic badge" aria-hidden="true">PDF</span><span class="tx"><span class="l">Currículum</span><span class="v">Descargar CV (PDF)</span></span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="end side">
+  <div class="wrap">
+    <span>Leonel Zalazar — Desarrollo web &amp; SEO técnico.</span>
+    <span>Tucumán, Argentina.</span>
+  </div>
+</footer>
+<script>
+(function(){
+  document.querySelectorAll('.cmp').forEach(function(cmp){
+    var tabs=[].slice.call(cmp.querySelectorAll('[role=tab]')), panels=[].slice.call(cmp.querySelectorAll('.cmp-panel'));
+    function show(i){ tabs.forEach(function(t,j){ t.setAttribute('aria-selected',j===i); t.tabIndex=j===i?0:-1; panels[j].hidden=j!==i; }); }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){show(i);});
+      t.addEventListener('keydown',function(e){ var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null; if(n===null)return; n=(n+tabs.length)%tabs.length; show(n); tabs[n].focus(); e.preventDefault(); });
+    });
+    cmp.querySelectorAll('.stage').forEach(function(st){
+      var r=st.querySelector('input');
+      r.addEventListener('input',function(){ st.style.setProperty('--pos', r.value+'%'); });
+    });
+  });
+})();
+</script>
+</body>
+</html>

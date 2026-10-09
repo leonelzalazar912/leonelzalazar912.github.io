@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es-AR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caso de SEO local en Tucumán — Leonel Zalazar</title>
+<meta name="description" content="Auditoría de 17 competidores y estrategia de SEO local para un ecommerce de colchones, muebles y bicicletas en Tucumán, sin local físico.">
+<link rel="canonical" href="https://leonelzalazar912.github.io/caso-seo-tucuman.html">
+<meta name="theme-color" content="#2B2621">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23221D18'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23D9AE64'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  .back{display:inline-block;margin:18px 0 0;font-family:"IBM Plex Mono",monospace;font-size:.8rem;text-decoration:none;color:var(--gold-deep)}
+  :root{
+    --paper:#F5EFE2; --panel:#FDFBF6; --panel-2:#F9F3E6; --panel-dark:#2B2621;
+    --ink:#2B2621; --ink-soft:#5B534A; --line:#DFD1AE;
+    --gold:#B8873F; --gold-deep:#8C6A2E; --gold-soft:#EADFC0; --gold-bright:#D9AE64;
+    --on-dark:#F5EFE2;
+    --shadow: 0 1px 2px rgba(43,38,33,.06), 0 8px 22px -10px rgba(43,38,33,.14);
+    --shadow-lg: 0 4px 8px rgba(43,38,33,.08), 0 20px 40px -16px rgba(43,38,33,.22);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#1D1914; --panel:#262019; --panel-2:#221D17; --panel-dark:#100D0A;
+      --ink:#F1E9DA; --ink-soft:#C2B199; --line:#453A29;
+      --gold:#D9AE64; --gold-deep:#EAC98C; --gold-soft:#332B1C; --gold-bright:#E4BC79;
+      --on-dark:#F1E9DA;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -12px rgba(0,0,0,.6);
+      --shadow-lg: 0 6px 12px rgba(0,0,0,.4), 0 26px 50px -18px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#1D1914; --panel:#262019; --panel-2:#221D17; --panel-dark:#100D0A;
+    --ink:#F1E9DA; --ink-soft:#C2B199; --line:#453A29;
+    --gold:#D9AE64; --gold-deep:#EAC98C; --gold-soft:#332B1C; --gold-bright:#E4BC79;
+    --on-dark:#F1E9DA;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -12px rgba(0,0,0,.6);
+    --shadow-lg: 0 6px 12px rgba(0,0,0,.4), 0 26px 50px -18px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box;}
+  html{color-scheme:light dark;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16.5px; line-height:1.62;
+    padding-inline:20px; padding-block:0 90px;
+  }
+  a{color:var(--gold-deep); text-decoration-color:var(--gold); text-underline-offset:2px;}
+  b,strong{color:var(--ink); font-weight:600;}
+  .wrap{max-width:720px; margin:0 auto;}
+
+  header.hero{
+    background:var(--panel-dark); color:var(--on-dark);
+    margin:0 -20px 50px; padding:50px 20px 40px; border-bottom:3px solid var(--gold);
+  }
+  header.hero .in{max-width:720px; margin:0 auto;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;}
+  .tags .tag{
+    font-family:"IBM Plex Mono", monospace; font-size:.72rem; letter-spacing:.03em;
+    color:var(--gold-bright); border:1px solid rgba(217,174,100,.4); border-radius:20px;
+    padding:4px 11px;
+  }
+  .kicker{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--gold-bright);
+    display:flex; align-items:center; gap:10px; margin-bottom:18px;
+  }
+  .kicker::before{content:""; width:22px; height:1.5px; background:var(--gold-bright);}
+  h1{
+    font-family:"Fraunces", Georgia, serif; font-weight:700;
+    font-size:clamp(1.9rem,6vw,2.7rem); line-height:1.1;
+    margin:0 0 .5em; text-wrap:balance; letter-spacing:-.015em;
+  }
+  .hero .lede{ font-size:1.1rem; color:#D8CBAE; max-width:38em; margin:0 0 26px; }
+  :root[data-theme="dark"] .hero .lede{color:var(--ink-soft);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .hero .lede{color:var(--ink-soft);} }
+  .meta{
+    display:flex; flex-wrap:wrap; gap:10px 24px; font-size:.85rem; color:#B7A98D;
+    border-top:1px solid rgba(255,255,255,.14); padding-top:16px;
+  }
+  :root[data-theme="dark"] .meta{color:var(--ink-soft); border-top-color:var(--line);}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .meta{color:var(--ink-soft); border-top-color:var(--line);} }
+  .meta span{display:flex; align-items:center; gap:6px;}
+  .dot{width:5px; height:5px; border-radius:50%; background:var(--gold-bright); display:inline-block;}
+
+  h2{ font-family:"Fraunces", serif; font-weight:600; font-size:1.4rem; margin:0 0 14px; text-wrap:balance; }
+  section{margin-bottom:48px;}
+  p{margin:0 0 14px;} p:last-child{margin-bottom:0;}
+
+  .panel{ background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px 24px; box-shadow:var(--shadow); }
+
+  .stat-row{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:var(--radius);
+    overflow:hidden; box-shadow:var(--shadow-lg);
+  }
+  .stat-row .cell{ background:var(--panel); padding:20px 12px; text-align:center; }
+  .stat-row .num{ font-family:"Fraunces",serif; font-weight:700; font-size:1.55rem; color:var(--gold-deep); line-height:1; margin-bottom:6px; font-variant-numeric:tabular-nums; }
+  .stat-row .cap{font-size:.72rem; color:var(--ink-soft); line-height:1.35;}
+  @media (max-width:560px){ .stat-row{grid-template-columns:1fr 1fr;} .stat-row .num{font-size:1.3rem;} }
+
+  ol.process{list-style:none; margin:0; padding:0; display:grid; gap:14px;}
+  ol.process li{
+    display:grid; grid-template-columns:34px 1fr; gap:14px; align-items:start;
+    background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px 18px; box-shadow:var(--shadow);
+  }
+  ol.process .idx{
+    width:34px; height:34px; border-radius:50%; background:var(--gold-soft); color:var(--gold-deep);
+    display:flex; align-items:center; justify-content:center; font-family:"Fraunces",serif; font-weight:700; font-size:1rem; flex-shrink:0;
+  }
+  ol.process b{display:block; margin-bottom:3px;}
+  ol.process span{color:var(--ink-soft); font-size:.94rem;}
+
+  .phase-row{display:grid; gap:12px;}
+  .phase{ background:var(--panel-2); border-left:4px solid var(--gold); border-radius:8px; padding:14px 18px; }
+  .phase .tag2{ font-family:"IBM Plex Mono",monospace; font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; color:var(--gold-deep); background:var(--gold-soft); border-radius:20px; padding:2px 9px; display:inline-block; margin-bottom:6px; }
+  .phase p{margin:0; font-size:.95rem; color:var(--ink-soft);}
+  .phase b{color:var(--ink);}
+
+  .tools{display:flex; flex-wrap:wrap; gap:8px;}
+  .tools span{
+    font-family:"IBM Plex Mono",monospace; font-size:.8rem; background:var(--panel-2);
+    border:1px solid var(--line); border-radius:6px; padding:5px 10px; color:var(--ink);
+  }
+
+  .status{
+    border:1px dashed var(--line); background:var(--panel-2); border-radius:10px;
+    padding:18px 22px; font-size:.97rem; color:var(--ink-soft);
+  }
+  .status b{color:var(--ink);}
+
+  .kw-group{margin-bottom:22px;}
+  .kw-group:last-child{margin-bottom:0;}
+  .kw-group h4{font-size:.92rem; font-weight:600; margin:0 0 10px; color:var(--ink);}
+  .chips{display:flex; flex-wrap:wrap; gap:7px;}
+  .chip{
+    font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink);
+    background:var(--panel-2); border:1px solid var(--line); border-radius:6px; padding:4px 9px;
+  }
+  .chip.hot{border-color:var(--gold); color:var(--gold-deep); background:var(--gold-soft);}
+  .kw-note{font-size:.9rem; color:var(--ink-soft); margin-top:16px;}
+
+  footer.end{ border-top:1px solid var(--line); padding-top:26px; }
+  footer.end p{color:var(--ink-soft); font-size:.95rem;}
+
+  @media (max-width:480px){ body{font-size:15.5px;} header.hero{padding:38px 20px 32px;} }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html#proyectos">← Volver al portfolio</a>
+
+  <header class="hero">
+    <div class="in">
+      <div class="kicker">Caso de estudio</div>
+      <h1>Encontrar el hueco en un mercado local saturado de comerciantes chicos</h1>
+      <p class="lede">Auditoría de competencia y estrategia de SEO local para un ecommerce de colchones, muebles y bicicletas en Tucumán, Argentina — sin presupuesto de agencia, sin local físico, y en un rubro donde casi nadie hace SEO en serio.</p>
+      <div class="tags">
+        <span class="tag">Investigación de competencia</span>
+        <span class="tag">Keyword research</span>
+        <span class="tag">SEO local</span>
+        <span class="tag">Estrategia de contenido</span>
+        <span class="tag">SEO técnico</span>
+      </div>
+      <div class="meta">
+        <span><span class="dot"></span> Ecommerce WordPress + WooCommerce</span>
+        <span><span class="dot"></span> 3 rubros, 1 provincia</span>
+        <span><span class="dot"></span> Sin local físico — reparto a domicilio</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>El contexto</h2>
+    <p>Un ecommerce nuevo, a punto de lanzarse, para un negocio que vende colchones, muebles y bicicletas con entrega a domicilio en toda una provincia argentina — sin local de atención al público. El sitio ya estaba construido (WordPress + WooCommerce, URLs limpias, catálogo optimizado), pero sin ninguna estrategia de posicionamiento definida todavía.</p>
+    <p><b>El problema no era técnico, era de mercado:</b> ¿cómo entra un negocio nuevo, sin presupuesto de agencia ni de publicidad, a competir por visibilidad en Google contra decenas de comercios que ya llevan años instalados en la misma zona?</p>
+  </section>
+
+  <section>
+    <h2>Mi proceso</h2>
+    <ol class="process">
+      <li><span class="idx">1</span><div><b>Relevé la competencia real, no supuesta.</b><span>Búsquedas manuales en Google por cada categoría de producto combinada con la zona geográfica, para ver exactamente quién aparece hoy — no una lista genérica de "competidores probables".</span></div></li>
+      <li><span class="idx">2</span><div><b>Evalué cada negocio con los mismos criterios.</b><span>¿Tiene tienda online real o solo redes sociales? ¿Qué plataforma usa? ¿Menciona la zona explícitamente? ¿Tiene errores técnicos visibles (velocidad, imágenes rotas, dominios inestables)?</span></div></li>
+      <li><span class="idx">3</span><div><b>Armé el mapa de palabras clave con intención real.</b><span>Combinaciones de producto + geolocalización + intención de compra (cuotas, envío gratis, ofertas), más long-tail de gente que todavía está decidiendo qué comprar.</span></div></li>
+      <li><span class="idx">4</span><div><b>Diseñé el SEO local para un caso atípico: sin local físico.</b><span>Google tiene una categoría específica para esto ("empresa de área de servicio") — pocos negocios chicos la configuran bien, y es una ventaja competitiva real si se hace correctamente.</span></div></li>
+      <li><span class="idx">5</span><div><b>Traduje todo a un plan de implementación por fases</b><span>separando lo que no depende de tener el dominio conectado de lo que sí, para poder empezar a ejecutar de inmediato en vez de esperar al lanzamiento.</span></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Lo que encontré</h2>
+    <div class="stat-row">
+      <div class="cell"><div class="num">17</div><div class="cap">negocios relevados uno por uno, en 3 categorías de producto</div></div>
+      <div class="cell"><div class="num">~40%</div><div class="cap">sin ninguna tienda online indexable por Google</div></div>
+      <div class="cell"><div class="num">0</div><div class="cap">competidores con blog o contenido más allá del catálogo</div></div>
+      <div class="cell"><div class="num">1</div><div class="cap">modificador de búsqueda de alta intención que nadie explota</div></div>
+    </div>
+    <p style="margin-top:18px;">El hallazgo más útil no fue una palabra clave suelta, sino un patrón: en un mercado local de este tamaño, la mayoría de los negocios no compite realmente por SEO — compite por estar presente en redes sociales. Eso deja la búsqueda orgánica de Google prácticamente libre para quien sí construya bien esa parte.</p>
+  </section>
+
+  <section>
+    <h2>Palabras clave a explotar</h2>
+    <p>Esto es lo que fundamenta la estrategia — no una corazonada. Cada palabra clave combina producto, zona y, cuando aplica, intención de compra. Las marcadas <span class="chip hot" style="padding:2px 7px;">así</span> son las de mayor prioridad, porque combinan búsqueda de producto con una decisión de compra casi tomada.</p>
+
+    <div class="kw-group">
+      <h4>Colchones y sommiers</h4>
+      <div class="chips">
+        <span class="chip">colchones en tucumán</span>
+        <span class="chip hot">sommier 2 plazas cuotas sin interés tucumán</span>
+        <span class="chip hot">combo sommier y colchón tucumán</span>
+        <span class="chip">colchones envío gratis tucumán</span>
+        <span class="chip">sommiers yerba buena</span>
+      </div>
+    </div>
+
+    <div class="kw-group">
+      <h4>Muebles</h4>
+      <div class="chips">
+        <span class="chip hot">placares a medida tucumán</span>
+        <span class="chip hot">juego de comedor 6 sillas envío gratis tucumán</span>
+        <span class="chip">sillón 3 cuerpos tucumán</span>
+        <span class="chip">puff pera tucumán</span>
+        <span class="chip">mesa ratona de living san miguel de tucumán</span>
+      </div>
+    </div>
+
+    <div class="kw-group">
+      <h4>Bicicletas</h4>
+      <div class="chips">
+        <span class="chip hot">bicicleta rodado 29 12 cuotas sin interés</span>
+        <span class="chip">bicicletas en tucumán</span>
+        <span class="chip">bicicleta rodado 20 para niños tucumán</span>
+        <span class="chip">bicicleta eléctrica precio tucumán</span>
+      </div>
+    </div>
+
+    <div class="kw-group">
+      <h4>Contenido long-tail (preguntas de pre-compra)</h4>
+      <div class="chips">
+        <span class="chip">diferencia entre sommier y colchón</span>
+        <span class="chip">medidas de cama 2 plazas / queen / king</span>
+        <span class="chip">cómo elegir el rodado de una bicicleta según la altura</span>
+        <span class="chip">colchón de resortes o espuma, cuál conviene</span>
+      </div>
+    </div>
+
+    <p class="kw-note">El patrón que más pesa acá: <b>«Ahora 12»</b> (las cuotas sin interés del gobierno argentino) es uno de los modificadores de mayor intención de compra del país en este tipo de productos, y ningún competidor relevado lo usa en su sitio — es la keyword que, sin volumen espectacular, más rápido puede convertir.</p>
+  </section>
+
+  <section>
+    <h2>La estrategia</h2>
+    <div class="panel">
+      <div class="phase-row">
+        <div class="phase"><span class="tag2">Fase 1 · sin depender del dominio</span><p><b>Contenido y estructura:</b> meta títulos/descripciones por categoría combinando producto + zona + intención de compra, página de cobertura geográfica, esquema de datos de producto, primeros artículos respondiendo preguntas reales de pre-compra.</p></div>
+        <div class="phase"><span class="tag2">Fase 2 · con el dominio conectado</span><p><b>Alta técnica:</b> Google Search Console (indexación + sitemap), Google Analytics 4, y Google Business Profile configurado como empresa de área de servicio — sin dirección pública, con zona de cobertura explícita.</p></div>
+        <div class="phase"><span class="tag2">Fase 3 · continuo</span><p><b>Sostenimiento:</b> contenido nuevo, reseñas post-entrega (la señal más fuerte para un negocio sin local visible), consistencia de nombre/teléfono en cualquier directorio nuevo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Herramientas y fuentes</h2>
+    <div class="tools">
+      <span>Búsqueda manual en Google (SERP real, no herramienta de terceros)</span>
+      <span>Rank Math SEO</span>
+      <span>Google Search Console</span>
+      <span>Google Analytics 4</span>
+      <span>Google Business Profile</span>
+      <span>Google Merchant Center (listados gratuitos)</span>
+      <span>WordPress + WooCommerce</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo se mide el éxito</h2>
+    <p>Definir la estrategia no alcanza si no sé cómo voy a comprobar que funcionó. Esto es lo que voy a mirar apenas el sitio esté online:</p>
+    <ol class="process">
+      <li><span class="idx">1</span><div><b>Posición y clics de las keywords «hot».</b><span>En Search Console, específicamente para las combinaciones de mayor intención de compra marcadas arriba (sommier con cuotas, placares a medida, comedor con envío gratis, bicicleta con cuotas) — son las que más rápido deberían moverse si la estrategia funciona.</span></div></li>
+      <li><span class="idx">2</span><div><b>Tráfico de los artículos de blog y a dónde va después.</b><span>En Analytics: si esos artículos atraen visitas nuevas, y si esas visitas siguen el camino hasta una categoría o producto — no alcanza con que entren, tienen que avanzar.</span></div></li>
+      <li><span class="idx">3</span><div><b>Aparición en el paquete local de Google Maps.</b><span>Para búsquedas con intención de cercanía ("cerca de mí", nombre de localidad) — la señal más directa de que el armado de Google Business Profile sin local físico está funcionando.</span></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <p class="status"><b>Estado actual:</b> la tienda ya está en línea en <a href="https://articuloshogarcl.com/" target="_blank" rel="noopener">articuloshogarcl.com</a>, con la estrategia aplicada en títulos, descripciones y datos estructurados. El próximo paso es medir: esta sección se va a actualizar con el desempeño real en Search Console de las palabras clave de arriba (impresiones, clics y posición promedio). Prefiero mostrar el proceso completo y lo que falta medir antes que maquillar un resultado que todavía no existe.</p>
+  </section>
+
+  <footer class="end">
+    <p>Leonel Zalazar — Desarrollo web &amp; SEO técnico. <a href="index.html#contacto">Contacto</a></p>
+  </footer>
+
+</div>
+
+</body></html>
